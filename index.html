@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KodeDen</title>
+
+    <link rel="shortcut icon" href="./assets/img/Slicedog.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Primary Meta Tags -->
+<title>kodeden page<title>
+<meta name="title" content="kodeden page" >
+<meta name="description" content="Start the Mini-Course: Rapidly Learning New Technical Skills" >
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://metatags.io/" >
+<meta property="og:title" content="kodeden page" >
+<meta property="og:description" content="Start the Mini-Course: Rapidly Learning New Technical Skills" >
+<meta property="og:image" content="https://i.ibb.co/F5bzNzg/Screenshot-2024-05-17-at-3-26-52-PM.png" >
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://metatags.io/" >
+<meta property="twitter:title" content="kodeden page" >
+<meta property="twitter:description" content="Start the Mini-Course: Rapidly Learning New Technical Skills" >
+<meta property="twitter:image" content="https://i.ibb.co/F5bzNzg/Screenshot-2024-05-17-at-3-26-52-PM.png" >
+
+<!-- Meta Tags Generated with https://metatags.io -->
+</head>
+
+<body>
+    <div class="loading-overlay d -none" id="loadingOverlay">
+        <div class="loader mx-5 d-flex flex-wrap justify-content-center align-items-center">
+            <img class=" w-100 max-500" src="./assets/img/svg/dog.svg" alt="svg">
+            <h2 class="fs-5xl text-purple pt-4 loader_1">...</h2>
+        </div>
+    </div>
+    <section class="hdrimg position-relative sction-hovr" id="Home">
+        <div class="position-absolute z-0 orngarow d-none d-md-block ">
+            <img src="./assets/img/svg/orngarow.svg" alt="orngarow.svg" class="w-100">
+
+        </div>
+        <nav class=" py-navbar">
+            <div class="container max-w-1140  ">
+                <div class=" d-flex align-items-center justify-content-between">
+                    <img class="cp max-logo" src="./assets/img/svg/dog.svg" alt="dog.svg">
+                    <div class="d-flex mb-0 gap-46 align-items-center mobile_view" id="navbar">
+                        <ul
+                            class="d-flex gap-32 m-0 p-0  justify-content-center flex-column flex-md-row align-items-center">
+                            <li> <img class="cp d-md-none max-logo" src="./assets/img/svg/dog.svg" alt="logo">
+                            </li>
+                            <li><a href="#Home"
+                                    class=" home outfit ff-Jost fw-4 fs-md hoverline hoverline textanimation lh-23 text-off-w op-80"
+                                    onclick="openNav()">Home</a> </li>
+                            <li><a href="#About"
+                                    class="home outfit ff-Jost text-off-w hoverline hoverline textanimation fw-500 fs-md lh-23 "
+                                    onclick="openNav()">About</a> </li>
+                            <li><a href="#Program"
+                                    class="home outfit ff-Jost text-off-w hoverline hoverline textanimation fw-500 fs-md lh-23"
+                                    onclick="openNav()">Program</a> </li>
+                            <li><a href="#works"
+                                    class="home outfit ff-Jost text-off-w hoverline hoverline textanimation fw-500 fs-md lh-23"
+                                    onclick="openNav()">How it works</a> </li>
+                            <li><a href="#FAQs"
+                                    class="home outfit ff-Jost text-off-w hoverline hoverline textanimation fw-500 fs-md lh-23"
+                                    onclick="openNav()">FAQs</a> </li>
+                        </ul>
+                        <div class=" m-0 p-0 d-flex align-items-center gap-10 ">
+                            <button class="btn-1 ff-Jost fw-900 fs-sm lh-20 text-white">Get Started</button>
+                        </div>
+
+                    </div>
+                    <div onclick="openNav()" class="menu d-block d-md-none ">
+                        <span class=" span-style"></span>
+                        <span class="my-2 span-style"></span>
+                        <span class=" span-style"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container max-w-1140 pt-78">
+            <div class="d-flex align-items-center justify-content-center flex-wrap flex-column" data-aos="fade-up">
+                <h3 class="text-p-white fw-600 ff-Jost lh-41 fs-4xl pb-20 text-center max-w-850 pb-28 mb-0 "
+                    data-aos="fade-down">Start the
+                    Mini-Course: <span class="color-gradient">Rapidly Learning New Technical Skills</span> </h3>
+                <p class="max-w-570 ff-Jost fw-600 lh-32 fs-2xl text-p-white mb-0 pb-28 text-center"
+                    data-aos="fade-down">Learn
+                    All The Skills You
+                    Need To
+                    Become a <span class="white2">Software Engineer!</span> </p>
+
+                <div class="d-flex justify-content-center flex-column video_clip" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
+                    <iframe width="960" height="476" class="vdo-bodr w-100" data-aos="fade-up"
+                        src="https://www.youtube.com/embed/ySmjheVxYc4?si=2Wg7O293DMrWZ8Wb" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+        <ul class="d-flex flex-column social-box position-absolute  mb-0 ">
+
+            <li><a class="social-links d-flex align-items-center  justify-content-center"
+                    href="https://twitter.com/?lang=en" target="_blank">
+                    <img src="./assets/img/svg/twitr.svg" alt="twitr.svg" class="twitter_box">
+                </a></li>
+            <li><a class="social-links d-flex align-items-center mt-3 justify-content-center"
+                    href="https://www.instagram.com/" target="_blank">
+                    <img src="./assets/img/svg/insta.svg" alt="insta.svg">
+                </a></li>
+            <li class="social-link-border"><a class="social-links mt-3 d-flex align-items-center justify-content-center"
+                    href="https://web.telegram.org/" target="_blank">
+                    <img src="./assets/img/svg/telegram.svg" alt="taligram.svg">
+                </a></li>
+            <li class="social-link-border"><a
+                    class="social-links  mt-3 d-flex align-items-center justify-content-center"
+                    href="https://in.linkedin.com/" target="_blank">
+                    <img src="./assets/img/svg/linkdin.svg" alt="svg/linkdin.svg">
+                </a></li>
+
+        </ul>
+    </section>
+    <section class="bg-black mt_2 position-relative">
+        <div class="position-absolute z-0 scndorngarow d-none d-md-block">
+            <img src="./assets/img/svg/scndorngarow.svg" alt="scndorngarow.svg" class="w-100">
+
+        </div>
+
+        <div class="container max-w-1140">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <h3 class="max-w-466 ff-Jost fw-600 lh-31 fs-2xl text-p-white pb-10 mb-0 text-center z-3 pt-20 ">Become
+                    a
+                    <span class="color-gradient">Software</span> Engineer Now!
+                </h3>
+                <p class="max-w-483 ff-Jost fw-400 lh-25 fs-md text-off-w-2 mb-0 pb-35">No Math or Science Background
+                    Needed</p>
+                <button class="btn-1 ff-Jost fw-900 fs-md lh-26 text-white gap-10" data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"> <span><img
+                            src="./assets/img/svg/phone.svg" alt="phone.svg"></span>Book a Call NOW</button>
+            </div>
+
+            <div class="row pt-162">
+                <div class="col-12 col-md-6" data-aos="fade-right">
+                    <h3 class="max-w-679 white2 ff-Jost fw-500 fs-5xl lh-68 mb-0 pb-7 ">What is KodeDen's <span
+                            class="color-gradient">6-Month</span> Software Engineering Course?</h3>
+
+                    <div class="d-flex flex-column gap-12">
+
+                        <ul class="d-flex  flex-column gap-2 p-0 m-0 ">
+                            <li style="list-style-type: disc !important;"><a href="#Home"
+                                    class="ff-Jost fw-400 fs-md text-off-w-2 lh-32 mb-0">With 6-figure
+                                    salaries, unlimited PTO, and the flexibility to work anywhere in the world—(or)</a>
+                            </li>
+                            <li><a href="#Home" class="ff-Jost fw-400 fs-md text-off-w-2 lh-32 mb-0">simply pick your
+                                    kids up from school, you want in.</a></li>
+                            <li><a href="#Home" class="ff-Jost fw-400 fs-md text-off-w-2 lh-32 mb-0"> But who has $25k+
+                                    to drop on a bootcamp?</a></li>
+                            <li><a href="#Home" class="ff-Jost fw-400 fs-md text-off-w-2 lh-32 mb-0"> Or semesters of
+                                    free time to dedicate to going back to school?</a></li>
+                            <li><a href="#Home" class="ff-Jost fw-400 fs-md text-off-w-2 lh-32 mb-0"> Or YEARS to go
+                                    through the trial and error involved in teaching yourself?</a></li>
+                            <li><a href="#Home" class="ff-Jost fw-400 fs-md text-off-w-2 lh-32 mb-0">Heck, most people
+                                    don’t even know where to start.</a></li>
+                            <li><a href="#Home" class="ff-Jost fw-400 fs-md text-off-w-2 lh-32 mb-0">If that's you,
+                                    you’ve been dreaming of a high-paying tech career but paralyzed when it comes time
+                                    to take action.</a></li>
+                        </ul>
+                        <p class="pt-7 color-gradient ff-Jost fs-md lh-23 mb-0 fw-600 pb-50">I want to Start My Software
+                            Engineering Journey!</p>
+                        <div>
+                            <button class="btn-1 ff-Jost fw-900 fs-sm d-flex lh-20 text-white gap-10 " data-aos="fade-zoom-in"
+                                data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"> <span><img
+                                        src="./assets/img/svg/phone.svg" alt="phone.svg"></span>Book a Call NOW</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 pt-4" data-aos="fade-left">
+                    <img src="./assets/img/Union.png" alt="Union.png" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black mt_2 position-relative " id="works">
+        <div class="position-absolute arowitm z-0 d-none d-md-block">
+            <img src="./assets/img/svg/arowitm.svg" alt="arowitm.svg" class="w-100">
+
+        </div>
+        <div class="container max-w-1140 pt-239">
+            <div class="d-flex flex-column justify-content-between text-center align-items-center">
+                <h2 class="max-w-1071 ff-Jost fw-500 fs-5xl lh-68 align-items-center mb-0 white2 pb-7">“From Confused to
+                    Coder”: Kodeden's Exclusive 6-Month <span class="color-gradient">Software Engineering</span> Course
+                </h2>
+                <p class="max-w-641 ff-Jost fs-md fw-400 lh-23 white2 pb-17 mb-0 text-center">Through twice-weekly live
+                    lectures and at-home exercises, you’ll:</p>
+                <p class="max-w-641 ff-Jost fs-md fw-400 lh-23 white2 pb-17 mb-0 text-center">Learn everything you need
+                    to know to break into tech from senior engineers with experience at Apple, Amazon, and the DOD.</p>
+
+            </div>
+            <div class="max-w-941 mx-auto">
+                <div class="row pt-88">
+                    <div class="col-12 col-md-6 col-lg-4 mt-4 mb-0" data-aos="flip-right">
+                        <div class="box-frist z-3 position-relative h-100">
+                            <h3 class="fw-600 ff-Jost lh-47 fs-3xl text-off-w mb-0">01</h3>
+                            <p class="lh-26 fw-700 ff-Jost fs-lg white2 mb-0 ">Master <br>
+                                Full-Stack Coding Skills
+                                <span>
+                                    <img src="./assets/img/svg/textarow.svg" alt="svg">
+                                </span>
+                            </p>
+                            <div class="position-absolute card_2">
+                                <img class="cursor w-100" src="./assets/img/shinman.png" alt="card">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4" data-aos="flip-right">
+
+                        <div class="box-frist z-3 position-relative">
+                            <h3 class="fw-600 ff-Jost lh-47 fs-3xl text-off-w mb-0">02</h3>
+                            <p class="lh-26 fw-700 ff-Jost fs-lg white2 mb-0 "> <br>
+                                Build a Standout Portfolio
+                                <span>
+                                    <img src="./assets/img/svg/textarow.svg" alt="svg">
+                                </span>
+                            </p>
+                            <div class="position-absolute card_3">
+                                <img class="cursor" src="./assets/img/Slice4.png" alt="card">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4" data-aos="flip-right">
+
+                        <div class="box-frist cursor z-3 position-relative">
+                            <h3 class="fw-600 ff-Jost lh-47 fs-3xl text-off-w mb-0">03</h3>
+                            <p class="lh-26 fw-700 ff-Jost fs-lg white2 mb-0 "> <br>
+                                Master
+                                Full-Stack Coding Skills
+                                <span>
+                                    <img src="./assets/img/svg/textarow.svg" alt="svg">
+                                </span>
+                            </p>
+                            <div class="position-absolute card_3">
+                                <img class="cursor w-100" src="./assets/img/moun.webp" alt="card">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-black mt_2" id="About">
+        <div class="container max-w-1140">
+            <div class="row pt-220">
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-lg-start"
+                    data-aos="fade-up-right">
+                    <img src="./assets/img/imgscnd.png" alt="imgscnd.png" class="w-100">
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center  text-lg-start" data-aos="fade-up-left">
+                    <div class="d-flex flex-column">
+                        <h2 class="fw-500 ff-Jost fs-5xl lh-68 white2 mb-0 max-w-558 pb-10">Are You A Good Fit For <span
+                                class="text-white">Our Program?</span> </h2>
+                        <p class="ff-Jost fw-400 fs-md lh-23 mb-0 white2 pb-20">About Who The Program is For</p>
+                        <p class="color-gradient mb-0 fw-600 fs-md lh-23 pb-10">Our 6-Month Software Engeering Course is
+                            for
+                            individuals that...Our 6-Month Software Engeering Course is for individuals that...</p>
+                        <p class="max-w-558 fw-400 fs-md ff-Jost mb-0 text-off-w pb-20">Want to take action now but
+                            don't
+                            have years to waste in university Are extremely motivated and want to succeed Have dreamed
+                            of
+                            becoming a software engineer but don't have hundreds of thousands of dollars lying around
+                        </p>
+                        <p class="color-gradient ff-Jost fw-600 fs-md lh-23 pb-10">It isn't for...</p>
+                        <p class="ff-Jost fw-400 lh-23 fs-md mb-0 text-off-w">People that aren't self-starters People
+                            that
+                            don't have a sense of urgency to become a software engineeer People that aren't serious
+                            about
+                            fulfilling their dream</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black mt_2">
+        <div class="container max-w-1145 position-relative">
+            <div class="row pt-208">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="max-w-679 mb-0 ff-Jost fw-500 fs-50 lh-72 pb-50 white2 text-center ">What our <span
+                            class="color-gradient">students</span> are saying</h2>
+                </div>
+                <div class="setup-itm">
+
+                    <div class="box-thrd" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <h2 class="f-Jost fw-400 fs-2xl mh-36 mb-0 text-p-white pb-2 max-w-348">Ross O’Rourke Founder,
+                            iC-1 Solutions.
+                            CEO Agile Onboarding</h2>
+                        <p class="ff-Jost fw-400 fs-md lh-26 text-off-w-2 mb-0 pb-3 max-w-335">Vitae elit dapibus
+                            facilisis magna. Sem amet
+                            sem ullamcorper augue magna egestas sit tempus, cras. Mauris gravida elit eget mi et vitae
+                            viverra duis eget. Aliquam, quisque gravida est pretium suscipit vel. Non blandit eget
+                            tortor
+                            netus pellentesque mauris, diam. </p>
+                        <h2 class="ff-Jost fw-600 fs-md lh-25 text-white pb-4 mb-0">Read More...</h2>
+                        <div class="d-flex justify-content-between pt-26 align-items-center">
+                            <div class="d-flex gap-3 align-items-center">
+                                <img class="cursor" src="./assets/img/girpic.png" alt="girpic.png">
+
+                                <h3 class="ff-Jost fw-400 fs-xl lh-28 mb-0 text-p-white">Ross O’Rourke</h3>
+                                <h2 class="f-Jost fw-400 fs-sm lh-20 text-off-w-2 mb-0">@Ross O’Rourke</h2>
+
+
+                            </div>
+                            <img class="pr-16" src="./assets/img/svg/colorfulltext.svg" alt="colorfulltext.svg">
+                        </div>
+                    </div>
+
+                    <div class="box-thrd" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <h2 class="f-Jost fw-400 fs-2xl mh-36 mb-0 text-p-white pb-2 max-w-348">“Luke O’Malley Tech Lead
+                            Agile
+                            Onboarding.”</h2>
+                        <p class="ff-Jost fw-400 fs-md lh-26 text-off-w-2 mb-0 pb-3 max-w-335">I highly recommend kody
+                            Doherty. I
+                            have had the pleasure of working with him on variety of software projects over the past
+                            three years and his guidance has been intergral to my personal success. He is a driven,
+                            organized engineer who develops inspiring relationships with his students. </p>
+                        <h2 class="ff-Jost fw-600 fs-md lh-25 text-white pb-4 mb-0">Read More...</h2>
+                        <div class="d-flex justify-content-between pt-26 align-items-center">
+                            <div class="d-flex gap-3 align-items-center">
+                                <img class="cursor" src="./assets/img/boypic.png" alt="boypic.png">
+                                <div class="">
+                                    <h3 class="ff-Jost fw-400 fs-xl lh-28 mb-0 text-p-white">Ross O’Rourke</h3>
+                                    <h2 class="ff-Jost fw-400 fs-sm lh-20 text-off-w-2 mb-0">@Ross O’Rourke</h2>
+                                </div>
+
+                            </div>
+                            <img class="pr-16" src="./assets/img/svg/colorfulltext.svg" alt="colorfulltext.svg">
+                        </div>
+                    </div>
+
+                    <div class="box-thrd" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <h2 class="f-Jost fw-400 fs-2xl mh-36 mb-0 text-p-white pb-2 max-w-348">Leslie Sage Director of
+                            Data
+                            Science at DevResults</h2>
+                        <p class="ff-Jost fw-400 fs-md lh-26 text-off-w-2 mb-0 pb-3 max-w-335">I had the pleasure of
+                            working with
+                            Kolton in 2019. In a team of a dozen people, Kolton stood out for his curiosity and drive.
+                            He executed ambitious projects with efficiency and attention to detail. He executed
+                            ambitious projects with efficiency and attention to detail. </p>
+                        <h2 class="ff-Jost fw-600 fs-md lh-25 text-white pb-4 mb-0">Read More...</h2>
+                        <div class="d-flex justify-content-between pt-26 align-items-center">
+                            <div class="d-flex gap-3 align-items-center">
+                                <img class="cursor" src="./assets/img/girlpicforth.png" alt="girlpicforth.png">
+
+                                <h3 class=" ff-Jost fw-400 fs-xl lh-28 mb-0 text-p-white">Ross O’Rourke</h3>
+                                <h2 class="ff-Jost fw-400 fs-sm lh-20 text-off-w-2 mb-0">@Ross O’Rourke</h2>
+
+
+                            </div>
+                            <img class="pr-16" src="./assets/img/svg/colorfulltext.svg" alt="colorfulltext.svg">
+                        </div>
+                    </div>
+                    <div class="box-thrd" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <h2 class="f-Jost fw-400 fs-2xl mh-36 mb-0 text-p-white pb-2 max-w-348">“Luke O’Malley Tech Lead
+                            Agile
+                            Onboarding.”</h2>
+                        <p class="ff-Jost fw-400 fs-md lh-26 text-off-w-2 mb-0 pb-3 max-w-335">I highly recommend kody
+                            Doherty. I
+                            have had the pleasure of working with him on variety of software projects over the past
+                            three years and his guidance has been intergral to my personal success. He is a driven,
+                            organized engineer who develops inspiring relationships with his students. </p>
+                        <h2 class="ff-Jost fw-600 fs-md lh-25 text-white pb-4 mb-0">Read More...</h2>
+                        <div class="d-flex justify-content-between pt-26 align-items-center">
+                            <div class="d-flex gap-3 align-items-center">
+                                <img class="cursor" src="./assets/img/boypic.png" alt="boypic.png">
+
+                                <h3 class="ff-Jost fw-400 fs-xl lh-28 mb-0 text-p-white">Ross O’Rourke</h3>
+                                <h2 class="ff-Jost fw-400 fs-sm lh-20 text-off-w-2 mb-0">@Ross O’Rourke</h2>
+
+
+                            </div>
+                            <img class="pr-16" src="./assets/img/svg/colorfulltext.svg" alt="colorfulltext.svg">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="prebtn1 cursor d-none d-md-block">
+                <div
+                    class="prev_btn prev_position_btn d-flex  position-absolute justify-content-center align-items-center">
+
+                    <img src="./assets/img/svg/lftbtn.svg" alt="ftbtn.svg">
+                </div>
+            </div>
+            <div class="nextbtn cursor d-none d-md-block">
+                <div
+                    class="next_btn  next_position_btn d-flex   position-absolute justify-content-center align-items-center">
+                    <img src="./assets/img/svg/rghtbtn.svg" alt="ftbtn.svg">
+                </div>
+            </div>
+
+
+
+
+            <div class="d-flex  justify-content-center pt-60" data-aos="zoom-in">
+                <button class="btn-1 ff-Jost fw-900 fs-sm lh-20 d-flex text-white gap-10" data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"> <span><img
+                            src="./assets/img/svg/phone.svg" alt="phone.svg"></span>Book a Call NOW</button>
+            </div>
+
+        </div>
+    </section>
+    <section class="mt_2 bg-black position-relative d-none d-md-block">
+        <div class="position-absolute z-0 scndorngarow-abb">
+            <img src="./assets/img/svg/scndorngarow.svg" alt="scndorngarow.svg" class="w-100">
+
+        </div>
+        <div class="container max-w-1140">
+            <div class="row pt-201">
+                <div class="col-12 col-md-6" data-aos="zoom-in">
+                    <h2 class="fw-500 ff-Jost fs-5xl lh-72 mb-0 white2 pb-7">our Guarantee</h2>
+                    <p class="max-w-592 fw-400 fs-2xl lh-47 ff-Jost text-off-w-2 pb-18 mb-0">If you decide coding isn’t
+                        right for you within 15 days of starting the program, we’ll give you your money back. </p>
+                    <p class="color-gradient fw-600 ff-Jost mb-0 lh-23 fs-md max-w-368">I want to become a software
+                        engineer in 6 months!</p>
+                    <div class="pt-60">
+                        <button class="btn-1 ff-Jost fw-900 fs-sm lh-20 d-flex text-white gap-10" data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"> <span><img
+                                    src="./assets/img/svg/phone.svg" alt="phone.svg"></span>Book a Call NOW</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="zoom-in">
+                    <img src="./assets/img/doggydon.png" alt="doggydon.png" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt_2 bg-black position-relative" id="Program">
+        <div class="position-absolute z-0 arowitm-og d-none d-md-block">
+            <img src="./assets/img/svg/arowitm.svg" alt="arowitm.svg" class="w-100">
+
+        </div>
+        <div class="container max-w-1140">
+            <div class="d-flex flex-column justify-content-center pt-201">
+                <h2 class="ff-Jost mb-0 fw-500 fs-5xl lh-72 white2 text-center">Who Are <span
+                        class="color-gradient">We</span> ?</h2>
+
+            </div>
+            <div class="row pt-73 pb-122 ">
+                <div class="col-12 col-md-6 d-flex justify-content-center  justify-content-lg-start "
+                    data-aos="zoom-in-down">
+                    <img src="./assets/img/twoman.png" alt="twoman.png" class="w-100">
+                </div>
+                <div class="col-12 col-md-6 d-flex  justify-content-lg-end text-center text-lg-start align-items-lg-center"
+                    data-aos="zoom-in-down">
+                    <div class="d-flex flex-column">
+                        <h2 class="ff-Jost fw-400 fs-sm mb-0 lh-22 white2 pb-2">MEET YOUR INSTRUCTORS</h2>
+                        <h3 class="white2 ff-Jost fw-500 lh-41 fs-3xl max-w-362 pb-14 mb-0">Hi, We’re Kody Doherty and
+                            Kolton Starr 👋</h3>
+                        <p class="max-w-494 text-off-w-2 ff-Jost fs-md fw-400 lh-25 pb-14">And we know firsthand that
+                            building a career as a software engineer without a computer science degree is possible.
+                            We started where you are *right now*—without engineering degrees, a professional portfolio,
+                            or
+                            years of experience.
+                            Then we climbed the ranks to hold senior positions at tech titans like Amazon, Apple, and
+                            the US
+                            government.
+                            Throughout our careers, we’ve managed entire teams of engineers, directed $30 million
+                            program
+                            budgets, and built 2 successful tech startups (one that we sold).
+                            Learning to code did more than add a few impressive lines to our resumes. It literally
+                            changed
+                            our lives…
+                        </p>
+                        <p class="color-gradient fs-md fw-600 ff-Jost mb-0 lh-23">I want to live my dream now!</p>
+                        <div class="d-flex pt-60 pb-122">
+                            <button class="btn-1 ff-Jost fw-900 fs-sm d-flex lh-20 text-white gap-10" data-aos="fade-zoom-in"
+                                data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"> <span><img
+                                        src="./assets/img/svg/phone.svg" alt="phone.svg"></span>Book a Call NOW</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="brdr-top bg-blue-1  " id="FAQs">
+        <div class="container max-w-1140">
+            <div class="d-flex justify-content-between pt-40 pb-40 flex-wrap">
+                <img src="./assets/img/svg/dog.svg" alt="dog.svg">
+                <p class="fw-400 ff-Jost fs-xl text-p-white lh-22 pt-3 text-center">Privacy Policy | Terms of Service |
+                    Cookie Policy
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg width="34" height="34" viewBox="0 0 34 34"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.084 16.9997V33.6663H14.9173V16.9997H0.333984L17.0007 0.333008L33.6673 16.9997H19.084Z"
+                fill="white" />
+        </svg>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
